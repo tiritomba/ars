@@ -1,4 +1,4 @@
-package domain.infrastructure;
+package domain.train.route.infrastructure;
 
 import domain.train.route.RoutePartEndPoint;
 

@@ -1,7 +1,6 @@
 package domain.movementline;
 
 import domain.train.route.RoutePartEndPoint;
-import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
 public class MovementLinePoint {
 
@@ -12,6 +11,6 @@ public class MovementLinePoint {
     }
 
     public RoutePartEndPoint getInfrastructureElement() {
-        throw new NotImplementedException();
+        return infrastructureElement;
     }
 }

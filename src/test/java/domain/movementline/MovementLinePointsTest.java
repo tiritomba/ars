@@ -1,6 +1,5 @@
 package domain.movementline;
 
-import com.google.common.collect.Lists;
 import domain.train.route.RoutePart;
 import domain.train.route.RoutePartEndPoint;
 import org.junit.Assert;
@@ -45,7 +44,7 @@ public class MovementLinePointsTest extends AbstractTest {
         movementLinePoints.addPointsForRoutePart(routePart1);
         movementLinePoints.addPointsForRoutePart(routePart2);
 
-        Assert.assertEquals(Lists.newArrayList(toSignal1, toSignal2), movementLinePoints.getSequenceOfPoints());
+        Assert.assertEquals(newArrayList(toSignal1, toSignal2), movementLinePoints.getSequenceOfPoints());
     }
 
     @Test
@@ -53,7 +52,7 @@ public class MovementLinePointsTest extends AbstractTest {
         when(routePartEndingOnDeadEnd.endPoint()).thenReturn(deadEnd);
         movementLinePoints.addPointsForRoutePart(routePartEndingOnDeadEnd);
 
-        Assert.assertEquals(Lists.newArrayList(deadEnd), movementLinePoints.getSequenceOfPoints());
+        Assert.assertEquals(newArrayList(deadEnd), movementLinePoints.getSequenceOfPoints());
     }
 
 }
