@@ -1,4 +1,4 @@
 package domain.train;
 
-public class TrainUuid {
+public class TrainId {
 }

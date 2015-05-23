@@ -1,4 +1,4 @@
-package domain.train;
+package domain.movementline;
 
 public class NonExistingMovementLine extends MovementLine {
 
